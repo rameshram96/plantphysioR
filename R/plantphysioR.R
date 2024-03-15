@@ -76,15 +76,15 @@ peg_6000 <- function(peg, C) {
 #' Calculate PEG600 requirement
 #' @description
 #'  Calculate Amount of PEG6000 required to reach desired water potential at given temperature
-#' @param T Temperature of solution in degree centigrade
+#' @param C Temperature of solution in degree centigrade
 #' @param bar Water potential in bars
 #'
 #' @return PEG6000 required
 #' @export
 #' @references Michel, B. E., & Kaufmann, M. R. (1973). The osmotic potential of polyethylene glycol 6000. Plant physiology, 51(5), 914-916.
-#' @examples calculate_PEG_6000 (25, -4)
-calculate_PEG_6000 <- function(T, bar) {
-  PEG <- ((0.0118 - 0.000267 * T) - sqrt((0.000267 * T - 0.0118)^2 + 4 * bar * (0.000000839 * T - 0.000118))) / (2 * (0.000000839 * T - 0.000118))
+#' @examples calculate_PEG_6000(25, -4)
+calculate_PEG_6000 <- function(C, bar) {
+  PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * T - 0.0118)^2 + 4 * bar * (0.000000839 * C- 0.000118))) / (2 * (0.000000839 * C - 0.000118))
   return(list("gram/literof water" = PEG, "gram/cc of water" = PEG / 1000))
 }
 
@@ -110,7 +110,9 @@ st_index <- function(Yp, Ys) {
 #'
 #' @return Mean productivity Index
 #' @references Hossain, A. B. S., Sears, R. G., Cox, T. S., & Paulsen, G. M. (1990). Desiccation tolerance and its relationship to assimilate partitioning in winter wheat. Crop Science, 30(3), 622-627.
-mp_index <- function(Yp,Ys){((Ys+Yp)/2)} # Hossain etal., 1990
+mp_index <- function(Yp, Ys) {
+  ((Ys + Yp) / 2)
+} # Hossain etal., 1990
 
 
 #' Geometric mean productivity (GMP) by Fernandez (1992)
@@ -123,7 +125,7 @@ mp_index <- function(Yp,Ys){((Ys+Yp)/2)} # Hossain etal., 1990
 #' @export
 #' @references Fernandez, G. C. (1993). Effective selection criteria for assessing plant stress tolerance.
 #' @examples
-#'  gmp(5, 3)
+#' gmp(5, 3)
 gmp <- function(Yp, Ys) {
   sqrt(Ys * Yp)
 } # Fernandez,1992
@@ -155,7 +157,7 @@ tol_index <- function(Yp, Ys) {
 #' @export
 #' @references Fischer, R. A., & Maurer, R. (1978). Drought resistance in spring wheat cultivars. I. Grain yield responses. Australian Journal of Agricultural Research, 29(5), 897-912.
 #' @examples ss_index(500, 350, 450, 370)
-ss_index <- function(Yp, Ys,Ms,Mp) {
+ss_index <- function(Yp, Ys, Ms, Mp) {
   ((1 - Ys) / Yp) / ((1 - Ms) / Mp)
 } # Fischer and Maurer,1978
 
@@ -167,7 +169,7 @@ ss_index <- function(Yp, Ys,Ms,Mp) {
 #' @return YSI
 #' @export
 #' @references Bouslama, M., & Schapaugh Jr, W. T. (1984). Stress tolerance in soybeans. I. Evaluation of three screening techniques for heat and drought tolerance 1. Crop science, 24(5), 933-937.
-#' @examples YSI(500,350)
+#' @examples YSI(500, 350)
 YSI <- function(Yp, Ys) {
   Ys / Yp
 } # Bouslama and Schapaugh,1984
@@ -193,8 +195,10 @@ YR_ratio <- function(Yp, Ys) {
 #' @return DRI
 #' @export
 #'
-#' @examples DRI(500,350)
-DRI<-function(Yp,Ys){(Ys*(Ys/Yp)/Yp)}
+#' @examples DRI(500, 350)
+DRI <- function(Yp, Ys) {
+  (Ys * (Ys / Yp) / Yp)
+}
 
 
 #' Harmonic Mean
@@ -218,8 +222,10 @@ HAM <- function(Yp, Ys) {
 #' @return Yield Index
 #' @export
 #' @references Gavuzzi, P., Rizza, F., Palumbo, M., Campanile, R. G., Ricciardi, G. L., & Borghi, B. (1997). Evaluation of field and laboratory predictors of drought and heat tolerance in winter cereals. Canadian journal of plant science, 77(4), 523-531.
-#' @examples Y_index(500,300)
-Y_index <- function(Ys, Ms) {Ys / Ms}
+#' @examples Y_index(500, 300)
+Y_index <- function(Ys, Ms) {
+  Ys / Ms
+}
 
 #' Yield Reduction
 #' Claculate percent yield reduction over control
@@ -229,8 +235,10 @@ Y_index <- function(Ys, Ms) {Ys / Ms}
 #' @return YR
 #' @export
 #'
-#' @examples yield_reduction (500,350)
-yield_reduction<-function(Yp,Ys){((Yp-Ys)/Ys)*100}
+#' @examples yield_reduction(500, 350)
+yield_reduction <- function(Yp, Ys) {
+  ((Yp - Ys) / Ys) * 100
+}
 
 #' Relative Drought Index
 #' Calculates relative drought index according to Fisher and Wood (1979)
@@ -242,8 +250,10 @@ yield_reduction<-function(Yp,Ys){((Yp-Ys)/Ys)*100}
 #' @return RDI
 #' @export
 #' @references Fischer RA, Wood JT (1979) Drought resistance in spring wheat cultivars III. Yield association with morphological traits. Aust J Agr Res. 30: 1001-1020
-#' @examples R_drought_index(500,350,400,300)
-R_drought_index<-function(Yp,Ys,Mp,Ms){(Ys/Ys)/(Mp/Ms)}
+#' @examples R_drought_index(500, 350, 400, 300)
+R_drought_index <- function(Yp, Ys, Mp, Ms) {
+  (Ys / Ys) / (Mp / Ms)
+}
 
 #' Golden Mean
 #' Calculates Golden mean value using Moradi et al.,(2012)
@@ -254,8 +264,10 @@ R_drought_index<-function(Yp,Ys,Mp,Ms){(Ys/Ys)/(Mp/Ms)}
 #' @export
 #' @references Moradi H, Akbari GA, Khorasani SK, Ramshini HA (2012) Evaluation of drought tolerance in corn (Zea Mays L.) new hybrids with using stress tolerance indices. Eur J Sustain Dev 1. (3): 543-560
 #' @examples
-#'  Golden_mean(500,350)
-Golden_mean<-function(Yp,Ys){(Yp+Ys)/(Yp-Ys)}
+#' Golden_mean(500, 350)
+Golden_mean <- function(Yp, Ys) {
+  (Yp + Ys) / (Yp - Ys)
+}
 
 #' Abiotic Tolerance Index
 #' Calculate abiotic tolerance index according to Moosavi et al. (2008)
@@ -266,8 +278,10 @@ Golden_mean<-function(Yp,Ys){(Yp+Ys)/(Yp-Ys)}
 #' @return ATI
 #' @export
 #' @references Moosavi SS, Samadi YB, Naghavi MR, Zali AA, Dashti H, Pourshahbazi A (2008) Introduction of new indices to identify relative drought tolerance and resistance in wheat genotypes. Desert. 12: 165-178.
-#' @examples ATI(500,350,400,300)
-ATI<-function(Yp,Ys,Mp,Ms){((Yp-Ys)/(Mp/Ms))*sqrt(Yp*Ys)}
+#' @examples ATI(500, 350, 400, 300)
+ATI <- function(Yp, Ys, Mp, Ms) {
+  ((Yp - Ys) / (Mp / Ms)) * sqrt(Yp * Ys)
+}
 
 #' All indices combined
 #' Function to all the indices related to biomass/ yield under different growth conditions
@@ -280,11 +294,11 @@ ATI<-function(Yp,Ys,Mp,Ms){((Yp-Ys)/(Mp/Ms))*sqrt(Yp*Ys)}
 #' @return Indices Combined
 #' @export
 #'
-#' @examples Mp<-mean(yield_data$Yp)
-#'           Ms<-mean(yield_data$Ys)
-#'           Yp<-yield_data$Yp
-#'           Ys<-yield_data$Ys
-#'           all_indices(Yp,Ys,Mp,Ms)
+#' @examples Mp <- mean(yield_data$Yp)
+#' Ms <- mean(yield_data$Ys)
+#' Yp <- yield_data$Yp
+#' Ys <- yield_data$Ys
+#' all_indices(Yp, Ys, Mp, Ms)
 all_indices <- function(Yp, Ys, Mp, Ms) {
   # Sub-functions
   st_index <- function(Yp, Ys) {
@@ -314,7 +328,9 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
     1 - (Ys / Yp)
   }
 
-  DRI_index <- function(Yp,Ys){Ys(Ys/Yp)/Yp}
+  DRI_index <- function(Yp, Ys) {
+    Ys(Ys / Yp) / Yp
+  }
 
   HAM <- function(Yp, Ys) {
     2 * (Yp * Ys) / (Yp + Ys)
@@ -323,10 +339,18 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
   Y_index <- function(Ys, Ms) {
     Ys / Ms
   }
-  yield_reduction<-function(Yp,Ys){((Yp-Ys)/Ys)*100}
-  R_drought_index<-function(Yp,Ys,Mp,Ms){(Ys/Ys)/(Mp/Ms)}
-  Golden_mean<-function(Yp,Ys,Mp,Ms){(Yp+Ys)/(Yp-Ys)}
-  ATI<-function(Yp,Ys,Mp,Ms){((Yp-Ys)/(Mp/Ms))*sqrt(Yp*Ys)}
+  yield_reduction <- function(Yp, Ys) {
+    ((Yp - Ys) / Ys) * 100
+  }
+  R_drought_index <- function(Yp, Ys, Mp, Ms) {
+    (Ys / Ys) / (Mp / Ms)
+  }
+  Golden_mean <- function(Yp, Ys, Mp, Ms) {
+    (Yp + Ys) / (Yp - Ys)
+  }
+  ATI <- function(Yp, Ys, Mp, Ms) {
+    ((Yp - Ys) / (Mp / Ms)) * sqrt(Yp * Ys)
+  }
   # Call sub-functions and return their results
   results <- list(
     StressToleranceIndex = st_index(Yp, Ys),
@@ -339,10 +363,10 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
     DRI = DRI(Yp, Ys),
     HAM = HAM(Yp, Ys),
     Y_Index = Y_index(Ys, Ms),
-    yield_reduction=yield_reduction(Yp,Ys),
-    R_drought_index=R_drought_index(Yp,Ys,Mp,Ms),
-    Golden_mean=Golden_mean(Yp,Ys),
-    ATI=ATI(Yp,Ys,Mp,Ms)
+    yield_reduction = yield_reduction(Yp, Ys),
+    R_drought_index = R_drought_index(Yp, Ys, Mp, Ms),
+    Golden_mean = Golden_mean(Yp, Ys),
+    ATI = ATI(Yp, Ys, Mp, Ms)
   )
 
   return(results)
@@ -355,7 +379,7 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
 #'   \item{\code{Genotype}}{character Genotype}
 #'   \item{\code{Yp}}{integer Yield under control condition}
 #'   \item{\code{Ys}}{integer Yield under drought condition}
-#'}
+#' }
 #' @source Simulated data, no external source were used
 #' @references No external reference
 "yield_data"

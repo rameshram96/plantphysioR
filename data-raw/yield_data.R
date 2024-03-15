@@ -6,7 +6,7 @@
 #'   \item{\code{Genotype}}{character Genotype}
 #'   \item{\code{Yp}}{integer Yield under control condition}
 #'   \item{\code{Ys}}{integer Yield under drought condition}
-#'}
+#' }
 #' @source Simulated data, no external source were used
 #' @references No external reference
 #' @example \dontrun{yield_data}

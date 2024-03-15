@@ -4,16 +4,20 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Ramesh", "Ramasamy", , "ramesh.rahu96@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5433-1417"))
-Description: This package provides some basic functions that may be useful for the scientific communities involved in the plant physiology research. This package includes functions for calculating chlorophyll and carotenoid content, calculating PEG600 requirement, and indices related to stress tolerance.
+Description: This package provides some basic functions that may be useful
+    for the scientific communities involved in the plant physiology
+    research. This package includes functions for calculating chlorophyll
+    and carotenoid content, calculating PEG600 requirement, and indices
+    related to stress tolerance.
 License: GPL (>= 3)
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
 URL: https://github.com/rameshram96/plantphysioR
 BugReports: https://github.com/rameshram96/plantphysioR/issues
 Depends: 
     R (>= 2.10)
-LazyData: true
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
