@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Ramesh", "Ramasamy", , "ramesh.rahu96@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5433-1417"))
-Description: Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass calculating chlorophyll content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available literature. 
+Description: Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass estimation chlorophyll content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available literature. 
 License: GPL (>= 3)
 URL: https://github.com/rameshram96/plantphysioR
 BugReports: https://github.com/rameshram96/plantphysioR/issues
