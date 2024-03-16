@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass calculating chlorophyll and carotenoids content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available litratures.
+Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass estimation chlorophyll content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available literature.
 }
 \seealso{
 Useful links:
