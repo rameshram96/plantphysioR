@@ -30,3 +30,7 @@ library(plantphysioR)
 ## basic example code
 ss_index(500, 350, 450, 370)
 ```
+
+```         
+[![R-CMD-check](https://github.com/rameshram96/plantphysioR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rameshram96/plantphysioR/actions/workflows/R-CMD-check.yaml)   
+```
