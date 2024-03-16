@@ -53,7 +53,7 @@ chl_total <- function(A645, A663, v, w) {
 #' @param fresh_weight Fresh weight of the sample used in grams
 #' @return Carotenoid concentration in µg/ml
 #' @export
-#' @references Lichtenthaler, H. K. (1987).Chlorophylls and carotenoids: pigments of photosynthetic biomembranes. In Methods in enzymology (Vol. 148, pp. 350-382). Academic Press.\doi{https://doi.10.1016/0076-6879(87)48036-1}
+#' @references Lichtenthaler, H. K. (1987). Chlorophylls and carotenoids: pigments of photosynthetic biomembranes. In Methods in enzymology (Vol. 148, pp. 350-382). Academic Press.
 #' @examples caro_total(0.7, 0.041, 0.025, 1)
 caro_total <- function(A470, A663, A646, fresh_weight) {
   carotenoid_concentration_ug_ml <- (1000 * A470 - 1.82 * (A663 + A646) + 85.02) / 198
@@ -84,7 +84,7 @@ peg_6000 <- function(peg, C) {
 #' @references Michel, B. E., & Kaufmann, M. R. (1973). The osmotic potential of polyethylene glycol 6000. Plant physiology, 51(5), 914-916.
 #' @examples calculate_PEG_6000(25, -4)
 calculate_PEG_6000 <- function(C, bar) {
-  PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * T - 0.0118)^2 + 4 * bar * (0.000000839 * C- 0.000118))) / (2 * (0.000000839 * C - 0.000118))
+  PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * C - 0.0118)^2 + 4 * bar * (0.000000839 * C- 0.000118))) / (2 * (0.000000839 * C - 0.000118))
   return(list("gram/literof water" = PEG, "gram/cc of water" = PEG / 1000))
 }
 

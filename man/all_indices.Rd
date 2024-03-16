@@ -24,9 +24,9 @@ All indices combined
 Function to all the indices related to biomass/ yield under different growth conditions
 }
 \examples{
-Mp<-mean(yield_data$Yp)
-          Ms<-mean(yield_data$Ys)
-          Yp<-yield_data$Yp
-          Ys<-yield_data$Ys
-          all_indices(Yp,Ys,Mp,Ms)
+Mp <- mean(yield_data$Yp)
+Ms <- mean(yield_data$Ys)
+Yp <- yield_data$Yp
+Ys <- yield_data$Ys
+all_indices(Yp, Ys, Mp, Ms)
 }

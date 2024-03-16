@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-This package provides some basic functions that may be useful for the scientific communities involved in the plant physiology research. This package includes functions for calculating chlorophyll and carotenoid content, calculating PEG600 requirement, and indices related to stress tolerance.
+Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass calculating chlorophyll and carotenoid content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available litratures.
 }
 \seealso{
 Useful links:

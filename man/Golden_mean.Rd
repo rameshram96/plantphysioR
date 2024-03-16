@@ -20,7 +20,7 @@ Golden Mean
 Calculates Golden mean value using Moradi et al.,(2012)
 }
 \examples{
- Golden_mean(500,350)
+Golden_mean(500, 350)
 }
 \references{
 Moradi H, Akbari GA, Khorasani SK, Ramshini HA (2012) Evaluation of drought tolerance in corn (Zea Mays L.) new hybrids with using stress tolerance indices. Eur J Sustain Dev 1. (3): 543-560

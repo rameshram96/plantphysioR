@@ -4,10 +4,10 @@
 \alias{calculate_PEG_6000}
 \title{Calculate PEG600 requirement}
 \usage{
-calculate_PEG_6000(T, bar)
+calculate_PEG_6000(C, bar)
 }
 \arguments{
-\item{T}{Temperature of solution in degree centigrade}
+\item{C}{Temperature of solution in degree centigrade}
 
 \item{bar}{Water potential in bars}
 }
@@ -18,7 +18,7 @@ PEG6000 required
 Calculate Amount of PEG6000 required to reach desired water potential at given temperature
 }
 \examples{
-calculate_PEG_6000 (25, -4)
+calculate_PEG_6000(25, -4)
 }
 \references{
 Michel, B. E., & Kaufmann, M. R. (1973). The osmotic potential of polyethylene glycol 6000. Plant physiology, 51(5), 914-916.

@@ -27,5 +27,5 @@ Calculate total carotenoid using Method by Lichtenthaler (1987)
 caro_total(0.7, 0.041, 0.025, 1)
 }
 \references{
-Lichtenthaler, H. K. (1987).Chlorophylls and carotenoids: pigments of photosynthetic biomembranes. In Methods in enzymology (Vol. 148, pp. 350-382). Academic Press.\doi{https://doi.10.1016/0076-6879(87)48036-1}
+Lichtenthaler, H. K. (1987). Chlorophylls and carotenoids: pigments of photosynthetic biomembranes. In Methods in enzymology (Vol. 148, pp. 350-382). Academic Press.
 }

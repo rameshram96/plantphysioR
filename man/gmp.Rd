@@ -18,7 +18,7 @@ GMP
 The genotype with high values of this index will be more desirable
 }
 \examples{
- gmp(5, 3)
+gmp(5, 3)
 }
 \references{
 Fernandez, G. C. (1993). Effective selection criteria for assessing plant stress tolerance.

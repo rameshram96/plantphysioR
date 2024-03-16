@@ -24,7 +24,7 @@ Relative Drought Index
 Calculates relative drought index according to Fisher and Wood (1979)
 }
 \examples{
-R_drought_index(500,350,400,300)
+R_drought_index(500, 350, 400, 300)
 }
 \references{
 Fischer RA, Wood JT (1979) Drought resistance in spring wheat cultivars III. Yield association with morphological traits. Aust J Agr Res. 30: 1001-1020

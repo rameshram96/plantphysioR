@@ -20,5 +20,5 @@ Yield Reduction
 Claculate percent yield reduction over control
 }
 \examples{
-yield_reduction (500,350)
+yield_reduction(500, 350)
 }

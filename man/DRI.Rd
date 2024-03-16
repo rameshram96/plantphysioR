@@ -20,5 +20,5 @@ Drought resistant index (DRI)
 The genotype with high values of this index will be more suitable for drought stress condition
 }
 \examples{
-DRI(500,350)
+DRI(500, 350)
 }

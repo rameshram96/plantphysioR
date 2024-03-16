@@ -18,7 +18,7 @@ Yield Index
 Yield index
 }
 \examples{
-Y_index(500,300)
+Y_index(500, 300)
 }
 \references{
 Gavuzzi, P., Rizza, F., Palumbo, M., Campanile, R. G., Ricciardi, G. L., & Borghi, B. (1997). Evaluation of field and laboratory predictors of drought and heat tolerance in winter cereals. Canadian journal of plant science, 77(4), 523-531.

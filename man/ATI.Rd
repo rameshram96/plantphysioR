@@ -24,7 +24,7 @@ Abiotic Tolerance Index
 Calculate abiotic tolerance index according to Moosavi et al. (2008)
 }
 \examples{
-ATI(500,350,400,300)
+ATI(500, 350, 400, 300)
 }
 \references{
 Moosavi SS, Samadi YB, Naghavi MR, Zali AA, Dashti H, Pourshahbazi A (2008) Introduction of new indices to identify relative drought tolerance and resistance in wheat genotypes. Desert. 12: 165-178.

@@ -20,7 +20,7 @@ Yield reduction index or Yield Stability Index
 Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions
 }
 \examples{
-YSI(500,350)
+YSI(500, 350)
 }
 \references{
 Bouslama, M., & Schapaugh Jr, W. T. (1984). Stress tolerance in soybeans. I. Evaluation of three screening techniques for heat and drought tolerance 1. Crop science, 24(5), 933-937.
