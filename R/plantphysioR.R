@@ -158,8 +158,7 @@ tol_index <- function(Yp, Ys) {
 #' @references Fischer, R. A., & Maurer, R. (1978). Drought resistance in spring wheat cultivars. I. Grain yield responses. Australian Journal of Agricultural Research, 29(5), 897-912.
 #' @examples ss_index(500, 350, 450, 370)
 ss_index <- function(Yp, Ys, Ms, Mp) {
-  ((1 - Ys) / Yp) / ((1 - Ms) / Mp)
-} # Fischer and Maurer,1978
+  ((1 - Ys) / Yp) / ((1 - Ms) / Mp)} # Fischer and Maurer,1978
 
 #' Yield reduction index or Yield Stability Index
 #' Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions
@@ -280,8 +279,7 @@ Golden_mean <- function(Yp, Ys) {
 #' @references Moosavi SS, Samadi YB, Naghavi MR, Zali AA, Dashti H, Pourshahbazi A (2008) Introduction of new indices to identify relative drought tolerance and resistance in wheat genotypes. Desert. 12: 165-178.
 #' @examples ATI(500, 350, 400, 300)
 ATI <- function(Yp, Ys, Mp, Ms) {
-  ((Yp - Ys) / (Mp / Ms)) * sqrt(Yp * Ys)
-}
+  ((Yp - Ys) / (Mp / Ms)) * sqrt(Yp * Ys)}
 
 #' All indices combined
 #' Function to all the indices related to biomass/ yield under different growth conditions
