@@ -45,13 +45,13 @@ chl_total <- function(A645, A663, v, w) {
 } # mg/g fw
 
 
-#' Total carotenoid content
-#' Calculate total carotenoid using Method by Lichtenthaler (1987)
+#' Total carotenoids content
+#' Calculate total carotenoids using Method by Lichtenthaler (1987)
 #' @param A470 Absorbance at 470nm
 #' @param A663 Absorbance at 663nm
 #' @param A646 Absorbance at 646nm
 #' @param fresh_weight Fresh weight of the sample used in grams
-#' @return Carotenoid concentration in µg/ml
+#' @return Carotenoids concentration in µg/ml
 #' @export
 #' @references Lichtenthaler, H. K. (1987). Chlorophylls and carotenoids: pigments of photosynthetic biomembranes. In Methods in enzymology (Vol. 148, pp. 350-382). Academic Press.
 #' @examples caro_total(0.7, 0.041, 0.025, 1)
