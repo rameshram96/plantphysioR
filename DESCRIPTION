@@ -1,6 +1,6 @@
 Package: plantphysioR
 Title: Fundamental Formulas for Plant Physiology
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Ramesh", "Ramasamy", , "ramesh.rahu96@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5433-1417"))
