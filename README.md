@@ -13,21 +13,16 @@ devtools::install_github("rameshram96/plantphysioR")
 
 ## Example
 
-Mp\<-mean(yield_data \$ Yp)
-
-Ms\<-mean(yield_data \$ Ys)
-
-Yp\<-yield_data \$ Yp
-
-Ys\<-yield_data\$Ys
-
-all_indices(Yp,Ys,Mp,Ms)
-
-This function calculates all the yield related indices inclued in the package
-
 ``` r
 library(plantphysioR)
-## basic example code
+#all_indices 
+Ms<-mean(yield_data$Ys)
+Ms<-mean(yield_data$Ys)
+Yp<-yield_data$Yp
+Ys<-yield_data$Ys
+all_indices(Yp,Ys,Mp,Ms)
+#This function calculates all the yield related indices inclued in the package
+# calculation of Stress susceptibility index
 ss_index(500, 350, 450, 370)
 ```
 
