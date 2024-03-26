@@ -1,10 +1,9 @@
 #' Chlorophyll'a' Concentration by Arnon method
-#' Calculates Chlorophyll a Concentration according to Arnon(1949) method
+#' @description Calculates Chlorophyll a Concentration according to Arnon(1949) method
 #' @param A663 Absorbance at 663nm
 #' @param A645 Absorbance at 645nm
 #' @param v Final volume of solvent used in ml
 #' @param w Fresh weight of the sample used in grams
-#'
 #' @return Chlorophyll a in mg/g of fresh weight
 #' @export
 #' @references
@@ -15,12 +14,11 @@ chl_a <- function(A663, A645, v, w) {
 } # mg/g fw
 
 #' Chlorophyll b concentration
-#' Calculates Chlorophyll b Concentration according to Arnon(1949) method
+#' @description Calculates Chlorophyll b Concentration according to Arnon(1949) method
 #' @param A645 Absorbance at 645nm
 #' @param A663 Absorbance at 663nm
 #' @param v Final volume of solvent used in ml
 #' @param w Fresh weight of the sample used in grams
-#'
 #' @return Chlorophyll b in mg/g of fresh weight
 #' @export
 #' @references Arnon, D. I. (1949). Copper enzymes in isolated chloroplasts. Polyphenoloxidase in Beta vulgaris. Plant physiology, 24(1), 1. \doi{10.1104/pp.24.1.1}
@@ -30,12 +28,11 @@ chl_b <- function(A645, A663, v, w) {
 } # mg/g fw
 
 #' Total chlorophyll (a+b) concentration
-#' Calculate Total chlorophyll (a+b) concentration using method by Arnon (1949)
+#' @description  Calculate Total chlorophyll (a+b) concentration using method by Arnon (1949)
 #' @param A645 Absorbance at 645nm
 #' @param A663 Absorbance at 663nm
 #' @param v Final volume of solvent used in ml
 #' @param w Fresh weight of the sample used in grams
-#'
 #' @return Total chlorophyll (a+b) in mg/g of fresh weight
 #' @export
 #' @references  Arnon, D. I. (1949). Copper enzymes in isolated chloroplasts. Polyphenoloxidase in Beta vulgaris. Plant physiology, 24(1), 1. \doi{10.1104/pp.24.1.1}
@@ -46,7 +43,7 @@ chl_total <- function(A645, A663, v, w) {
 
 
 #' Total carotenoids content
-#' Calculate total carotenoids using Method by Lichtenthaler (1987)
+#' @description  Calculate total carotenoids using Method by Lichtenthaler (1987)
 #' @param A470 Absorbance at 470nm
 #' @param A663 Absorbance at 663nm
 #' @param A646 Absorbance at 646nm
@@ -59,12 +56,10 @@ caro_total <- function(A470, A663, A646, fresh_weight) {
   carotenoid_concentration_ug_ml <- (1000 * A470 - 1.82 * (A663 + A646) + 85.02) / 198
 }
 
-#' Water potential of PEG6000
-#' @description
-#' Calculate the corresponding water potential of PEG6000 when dissolved in 1l of water
+#' Water potential of Polyethylene glycol (PEG) 6000
+#' @description Calculate the corresponding water potential of PEG6000 when dissolved in 1l of water
 #' @param peg Amount PEG600O in grams
 #' @param C Temperature of the solution in degree centigrade
-#'
 #' @return Water potential in bars
 #' @export
 #' @references Michel, B. E., & Kaufmann, M. R. (1973). The osmotic potential of polyethylene glycol 6000. Plant physiology, 51(5), 914-916.
@@ -73,9 +68,8 @@ peg_6000 <- function(peg, C) {
   -(1.18 * 10^-2) * peg - (1.18 * 10^-4) * (peg^2) + (2.67 * 10^-4) * (peg * C) + (8.39 * 10^-7) * (peg^2) * (C)
 }
 
-#' Calculate PEG600 requirement
-#' @description
-#'  Calculate Amount of PEG6000 required to reach desired water potential at given temperature
+#' Calculate Polyethylene glycol (PEG) 6000 requirement
+#' @description Calculate Amount of PEG6000 required to reach desired water potential at given temperature
 #' @param C Temperature of solution in degree centigrade
 #' @param bar Water potential in bars
 #'
@@ -88,9 +82,8 @@ calculate_PEG_6000 <- function(C, bar) {
   return(list("gram/literof water" = PEG, "gram/cc of water" = PEG / 1000))
 }
 
-#' Calculate Stress tolerance index suggested by Fernandez (1992)
-#' @description
-#' The genotype with high STI values will be tolerant to drought
+#' Calculate Stress tolerance index (STI) suggested by Fernandez (1992)
+#' @description The genotype with high STI values will be tolerant to drought
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -102,9 +95,8 @@ st_index <- function(Yp, Ys) {
   (Ys * Yp) / (Yp)^2
 } # Fernandez,1992
 
-#' Mean productivity Index- by Hossain etal., (1990)
-#' @description
-#' The genotype with high values of this index will be more desirable
+#' Mean productivity Index (MPI)- by Hossain et al., (1990)
+#' @description The genotype with high values of this index will be more desirable
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -116,8 +108,7 @@ mp_index <- function(Yp, Ys) {
 
 
 #' Geometric mean productivity (GMP) by Fernandez (1992)
-#' @description
-#' The genotype with high values of this index will be more desirable
+#' @description The genotype with high values of this index will be more desirable
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -132,8 +123,7 @@ gmp <- function(Yp, Ys) {
 
 
 #' Tolerance index -TOL by Hossain etal., (1990)
-#' @description
-#' Higher the TOL value indicates the genotype is tolerant to stress
+#' @description Higher the TOL value indicates the genotype is tolerant to stress
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -146,8 +136,8 @@ tol_index <- function(Yp, Ys) {
 } # Hossain etal., 1990
 
 
-#' Stress susceptibility index (SSI) by #Fischer and Maurer (1978)
-#' The genotype with high SSI < 1 are more resistant to drought stress conditions
+#' Stress susceptibility index (SSI) by Fischer and Maurer (1978)
+#' @description The genotype with high SSI < 1 are more resistant to drought stress conditions
 #' @param Yp Yield under control condition
 #' @param Ys Yield under Stress condition
 #' @param Ms Mean yield of all the genotypes under control condition
@@ -160,8 +150,8 @@ tol_index <- function(Yp, Ys) {
 ss_index <- function(Yp, Ys, Ms, Mp) {
   ((1 - Ys) / Yp) / ((1 - Ms) / Mp)} # Fischer and Maurer,1978
 
-#' Yield reduction index or Yield Stability Index
-#' Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions
+#' Yield reduction index or Yield Stability Index (YSI)
+#' @description Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -174,7 +164,7 @@ YSI <- function(Yp, Ys) {
 } # Bouslama and Schapaugh,1984
 
 #' Yield reduction ratio (YR)
-#' lesser the YR value more stable under stress conditions
+#' @description lesser the YR value more stable under stress conditions
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -184,10 +174,10 @@ YSI <- function(Yp, Ys) {
 #' @examples YR_ratio(500, 350)
 YR_ratio <- function(Yp, Ys) {
   1 - (Ys / Yp)
-} # Golestanniand anshiand Assud(1998)
+}
 
 #' Drought resistant index (DRI)
-#' The genotype with high values of this index will be more suitable for drought stress condition
+#' @description The genotype with high values of this index will be more suitable for drought stress condition
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #'
@@ -198,8 +188,6 @@ YR_ratio <- function(Yp, Ys) {
 DRI <- function(Yp, Ys) {
   (Ys * (Ys / Yp) / Yp)
 }
-
-
 #' Harmonic Mean
 #'
 #' @param Yp Yield under control condition
@@ -210,10 +198,8 @@ DRI <- function(Yp, Ys) {
 #' @references Schneider, K. A., Rosales‐Serna, R., Ibarra‐Perez, F., Cazares‐Enriquez, B., Acosta‐Gallegos, J. A., Ramirez‐Vallejo, P., ... & Kelly, J. D. (1997). Improving common bean performance under drought stress. Crop science, 37(1), 43-50.
 #' @examples HAM(500, 350)
 HAM <- function(Yp, Ys) {
-  2 * (Yp * Ys) / (Yp + Ys)
-}
-
-#' Yield index
+  2 * (Yp * Ys) / (Yp + Ys)}
+#' Yield index (YI)
 #'
 #' @param Ys Yield under stress condition
 #' @param Ms Mean Yield of all the genotypes under stress Condition
@@ -222,25 +208,18 @@ HAM <- function(Yp, Ys) {
 #' @export
 #' @references Gavuzzi, P., Rizza, F., Palumbo, M., Campanile, R. G., Ricciardi, G. L., & Borghi, B. (1997). Evaluation of field and laboratory predictors of drought and heat tolerance in winter cereals. Canadian journal of plant science, 77(4), 523-531.
 #' @examples Y_index(500, 300)
-Y_index <- function(Ys, Ms) {
-  Ys / Ms
-}
-
+Y_index <- function(Ys, Ms) {Ys / Ms}
 #' Yield Reduction
-#' Claculate percent yield reduction over control
+#' @description  Claculate percent yield reduction over control
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
-#'
 #' @return YR
 #' @export
-#'
 #' @examples yield_reduction(500, 350)
 yield_reduction <- function(Yp, Ys) {
-  ((Yp - Ys) / Ys) * 100
-}
-
-#' Relative Drought Index
-#' Calculates relative drought index according to Fisher and Wood (1979)
+  ((Yp - Ys) / Ys) * 100}
+#' Relative Drought Index (RDI)
+#' @description Calculates relative drought index according to Fisher and Wood (1979)
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #' @param Mp Mean Yield of all the genotypes under control Condition
@@ -254,11 +233,10 @@ R_drought_index <- function(Yp, Ys, Mp, Ms) {
   (Ys / Ys) / (Mp / Ms)
 }
 
-#' Golden Mean
-#' Calculates Golden mean value using Moradi et al.,(2012)
+#' Golden Mean (GM)
+#' @description  Calculates Golden mean value using Moradi et al.,(2012)
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
-
 #' @return GM
 #' @export
 #' @references Moradi H, Akbari GA, Khorasani SK, Ramshini HA (2012) Evaluation of drought tolerance in corn (Zea Mays L.) new hybrids with using stress tolerance indices. Eur J Sustain Dev 1. (3): 543-560
@@ -267,9 +245,8 @@ R_drought_index <- function(Yp, Ys, Mp, Ms) {
 Golden_mean <- function(Yp, Ys) {
   (Yp + Ys) / (Yp - Ys)
 }
-
-#' Abiotic Tolerance Index
-#' Calculate abiotic tolerance index according to Moosavi et al. (2008)
+#' Abiotic Tolerance Index (ATI)
+#' @description  Calculate abiotic tolerance index according to Moosavi et al. (2008)
 #' @param Yp Yield under control condition
 #' @param Ys Yield under Stress condition
 #' @param Ms Mean yield of all the genotypes under control condition
@@ -280,18 +257,14 @@ Golden_mean <- function(Yp, Ys) {
 #' @examples ATI(500, 350, 400, 300)
 ATI <- function(Yp, Ys, Mp, Ms) {
   ((Yp - Ys) / (Mp / Ms)) * sqrt(Yp * Ys)}
-
 #' All indices combined
-#' Function to all the indices related to biomass/ yield under different growth conditions
-#'
+#' @description Function to all the indices related to biomass/ yield under different growth conditions
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
 #' @param Mp Mean yield of all the genotypes under control condition
 #' @param Ms Mean yiels of all the genotyps under Stress condition
-#'
 #' @return Indices Combined
 #' @export
-#'
 #' @examples Mp <- mean(yield_data$Yp)
 #' Ms <- mean(yield_data$Ys)
 #' Yp <- yield_data$Yp
@@ -309,7 +282,6 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
   gmp <- function(Yp, Ys) {
     sqrt(Ys * Yp)
   }
-
   tol_index <- function(Yp, Ys) {
     (Yp - Ys)
   }
