@@ -43,7 +43,7 @@ test_that("caro_total function calculates total carotenoid concentration correct
 
 
 test_that("peg_6000 function calculates PEG6000 requirement correctly", {
-  peg <- 25
+  peg <- 100
   C <- 25
   expected_result <- -(1.18 * 10^-2) * peg - (1.18 * 10^-4) * (peg^2) + (2.67 * 10^-4) * (peg * C) + (8.39 * 10^-7) * (peg^2) * (C)
   result <- peg_6000(peg, C)
