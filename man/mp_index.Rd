@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{mp_index}
 \alias{mp_index}
-\title{Mean productivity Index- by Hossain etal., (1990)}
+\title{Mean productivity Index (MPI)- by Hossain et al., (1990)}
 \usage{
 mp_index(Yp, Ys)
 }

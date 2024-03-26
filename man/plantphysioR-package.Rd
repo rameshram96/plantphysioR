@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass estimation chlorophyll content, determination water potential of PEG6000 and functions related to estimation of yield related indices with respect to different growth conditions. Functions included in the packages are based on the formula from the available literature.
+Functions tailored for scientific and student communities involved in plant science research. Functionalities encompass estimation chlorophyll content according to Arnon (1949) <10.1104/pp.24.1.1>, determination water potential of Polyethylene glycol(PEG)6000 as in Michel and Kaufmann (1973) <10.1104/pp.51.5.914> and functions related to estimation of yield related indices like Abiotic tolerance index as given by Moosavi et al.(2008)<10.22059/JDESERT.2008.27115>, Geometric mean productivity (GMP) by Fernandez (1992) <10.5555/19951607124>, Golden Mean by Moradi et al.(2012)<10.14207/ejsd.2012.v1n3p543>, HAM by Schneider et al.(1997)<10.2135/cropsci1997.0011183X003700010007x>,MPI and TOL by Hossain etal., (1990)<10.2135/cropsci1990.0011183X003000030030x>, RDI by Fischer et al. (1979)<10.1071/AR9791001>,SSI by Fisher et al.(1978)<10.1071/AR9780897>, STI by Fernandez (1993)<10.22001/wvc.72511>,YSI by Bouslama & Schapaugh (1984)<10.2135/cropsci1984.0011183X002400050026x>, Yield index by Gavuzzi et al.(1997)<10.4141/P96-130>
 }
 \seealso{
 Useful links:

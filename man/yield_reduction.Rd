@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{yield_reduction}
 \alias{yield_reduction}
-\title{Yield Reduction
-Claculate percent yield reduction over control}
+\title{Yield Reduction}
 \usage{
 yield_reduction(Yp, Ys)
 }
@@ -16,7 +15,6 @@ yield_reduction(Yp, Ys)
 YR
 }
 \description{
-Yield Reduction
 Claculate percent yield reduction over control
 }
 \examples{

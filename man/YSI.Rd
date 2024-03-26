@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{YSI}
 \alias{YSI}
-\title{Yield reduction index or Yield Stability Index
-Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions}
+\title{Yield reduction index or Yield Stability Index (YSI)}
 \usage{
 YSI(Yp, Ys)
 }
@@ -16,7 +15,6 @@ YSI(Yp, Ys)
 YSI
 }
 \description{
-Yield reduction index or Yield Stability Index
 Higer YSI value depicts that particular genotype is stable under both normal and stressed conditions
 }
 \examples{

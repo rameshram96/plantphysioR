@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{ATI}
 \alias{ATI}
-\title{Abiotic Tolerance Index
-Calculate abiotic tolerance index according to Moosavi et al. (2008)}
+\title{Abiotic Tolerance Index (ATI)}
 \usage{
 ATI(Yp, Ys, Mp, Ms)
 }
@@ -20,7 +19,6 @@ ATI(Yp, Ys, Mp, Ms)
 ATI
 }
 \description{
-Abiotic Tolerance Index
 Calculate abiotic tolerance index according to Moosavi et al. (2008)
 }
 \examples{

@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{all_indices}
 \alias{all_indices}
-\title{All indices combined
-Function to all the indices related to biomass/ yield under different growth conditions}
+\title{All indices combined}
 \usage{
 all_indices(Yp, Ys, Mp, Ms)
 }
@@ -20,7 +19,6 @@ all_indices(Yp, Ys, Mp, Ms)
 Indices Combined
 }
 \description{
-All indices combined
 Function to all the indices related to biomass/ yield under different growth conditions
 }
 \examples{

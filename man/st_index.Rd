@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{st_index}
 \alias{st_index}
-\title{Calculate Stress tolerance index suggested by Fernandez (1992)}
+\title{Calculate Stress tolerance index (STI) suggested by Fernandez (1992)}
 \usage{
 st_index(Yp, Ys)
 }

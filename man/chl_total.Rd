@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{chl_total}
 \alias{chl_total}
-\title{Total chlorophyll (a+b) concentration
-Calculate Total chlorophyll (a+b) concentration using method by Arnon (1949)}
+\title{Total chlorophyll (a+b) concentration}
 \usage{
 chl_total(A645, A663, v, w)
 }
@@ -20,7 +19,6 @@ chl_total(A645, A663, v, w)
 Total chlorophyll (a+b) in mg/g of fresh weight
 }
 \description{
-Total chlorophyll (a+b) concentration
 Calculate Total chlorophyll (a+b) concentration using method by Arnon (1949)
 }
 \examples{

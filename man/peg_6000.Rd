@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{peg_6000}
 \alias{peg_6000}
-\title{Water potential of PEG6000}
+\title{Water potential of Polyethylene glycol (PEG) 6000}
 \usage{
 peg_6000(peg, C)
 }

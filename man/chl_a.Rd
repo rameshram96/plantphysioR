@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{chl_a}
 \alias{chl_a}
-\title{Chlorophyll'a' Concentration by Arnon method
-Calculates Chlorophyll a Concentration according to Arnon(1949) method}
+\title{Chlorophyll'a' Concentration by Arnon method}
 \usage{
 chl_a(A663, A645, v, w)
 }
@@ -20,7 +19,6 @@ chl_a(A663, A645, v, w)
 Chlorophyll a in mg/g of fresh weight
 }
 \description{
-Chlorophyll'a' Concentration by Arnon method
 Calculates Chlorophyll a Concentration according to Arnon(1949) method
 }
 \examples{

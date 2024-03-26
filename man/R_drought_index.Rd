@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{R_drought_index}
 \alias{R_drought_index}
-\title{Relative Drought Index
-Calculates relative drought index according to Fisher and Wood (1979)}
+\title{Relative Drought Index (RDI)}
 \usage{
 R_drought_index(Yp, Ys, Mp, Ms)
 }
@@ -20,7 +19,6 @@ R_drought_index(Yp, Ys, Mp, Ms)
 RDI
 }
 \description{
-Relative Drought Index
 Calculates relative drought index according to Fisher and Wood (1979)
 }
 \examples{

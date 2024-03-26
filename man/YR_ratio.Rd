@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{YR_ratio}
 \alias{YR_ratio}
-\title{Yield reduction ratio (YR)
-lesser the YR value more stable under stress conditions}
+\title{Yield reduction ratio (YR)}
 \usage{
 YR_ratio(Yp, Ys)
 }
@@ -16,7 +15,6 @@ YR_ratio(Yp, Ys)
 YR
 }
 \description{
-Yield reduction ratio (YR)
 lesser the YR value more stable under stress conditions
 }
 \examples{

@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{Golden_mean}
 \alias{Golden_mean}
-\title{Golden Mean
-Calculates Golden mean value using Moradi et al.,(2012)}
+\title{Golden Mean (GM)}
 \usage{
 Golden_mean(Yp, Ys)
 }
@@ -16,7 +15,6 @@ Golden_mean(Yp, Ys)
 GM
 }
 \description{
-Golden Mean
 Calculates Golden mean value using Moradi et al.,(2012)
 }
 \examples{

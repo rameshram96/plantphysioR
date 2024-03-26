@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{calculate_PEG_6000}
 \alias{calculate_PEG_6000}
-\title{Calculate PEG600 requirement}
+\title{Calculate Polyethylene glycol (PEG) 6000 requirement}
 \usage{
 calculate_PEG_6000(C, bar)
 }

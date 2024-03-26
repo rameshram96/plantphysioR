@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{DRI}
 \alias{DRI}
-\title{Drought resistant index (DRI)
-The genotype with high values of this index will be more suitable for drought stress condition}
+\title{Drought resistant index (DRI)}
 \usage{
 DRI(Yp, Ys)
 }
@@ -16,7 +15,6 @@ DRI(Yp, Ys)
 DRI
 }
 \description{
-Drought resistant index (DRI)
 The genotype with high values of this index will be more suitable for drought stress condition
 }
 \examples{

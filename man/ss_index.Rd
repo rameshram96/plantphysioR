@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{ss_index}
 \alias{ss_index}
-\title{Stress susceptibility index (SSI) by #Fischer and Maurer (1978)
-The genotype with high SSI < 1 are more resistant to drought stress conditions}
+\title{Stress susceptibility index (SSI) by Fischer and Maurer (1978)}
 \usage{
 ss_index(Yp, Ys, Ms, Mp)
 }
@@ -20,7 +19,6 @@ ss_index(Yp, Ys, Ms, Mp)
 SSI
 }
 \description{
-Stress susceptibility index (SSI) by #Fischer and Maurer (1978)
 The genotype with high SSI < 1 are more resistant to drought stress conditions
 }
 \examples{

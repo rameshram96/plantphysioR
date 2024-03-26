@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{caro_total}
 \alias{caro_total}
-\title{Total carotenoids content
-Calculate total carotenoids using Method by Lichtenthaler (1987)}
+\title{Total carotenoids content}
 \usage{
 caro_total(A470, A663, A646, fresh_weight)
 }
@@ -20,7 +19,6 @@ caro_total(A470, A663, A646, fresh_weight)
 Carotenoids concentration in µg/ml
 }
 \description{
-Total carotenoids content
 Calculate total carotenoids using Method by Lichtenthaler (1987)
 }
 \examples{

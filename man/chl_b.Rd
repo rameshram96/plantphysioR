@@ -2,8 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{chl_b}
 \alias{chl_b}
-\title{Chlorophyll b concentration
-Calculates Chlorophyll b Concentration according to Arnon(1949) method}
+\title{Chlorophyll b concentration}
 \usage{
 chl_b(A645, A663, v, w)
 }
@@ -20,7 +19,6 @@ chl_b(A645, A663, v, w)
 Chlorophyll b in mg/g of fresh weight
 }
 \description{
-Chlorophyll b concentration
 Calculates Chlorophyll b Concentration according to Arnon(1949) method
 }
 \examples{

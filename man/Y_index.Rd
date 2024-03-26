@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{Y_index}
 \alias{Y_index}
-\title{Yield index}
+\title{Yield index (YI)}
 \usage{
 Y_index(Ys, Ms)
 }
@@ -15,7 +15,7 @@ Y_index(Ys, Ms)
 Yield Index
 }
 \description{
-Yield index
+Yield index (YI)
 }
 \examples{
 Y_index(500, 300)
