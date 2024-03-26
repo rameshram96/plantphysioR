@@ -52,7 +52,7 @@ test_that("peg_6000 function calculates PEG6000 requirement correctly", {
 
 test_that("calculate_PEG_6000 function calculates PEG6000 requirement correctly", {
   C <- 25
-  bar <- 15
+  bar <- 20
   result <- calculate_PEG_6000(C, bar)
   expected_PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * C - 0.0118)^2 + 4 * bar * (0.000000839 * C- 0.000118))) / (2 * (0.000000839 * C - 0.000118))
   expected_result <- list("gram/literof water" = expected_PEG, "gram/cc of water" = expected_PEG / 1000)

@@ -78,8 +78,8 @@ peg_6000 <- function(peg, C) {
 #' @references Michel, B. E., & Kaufmann, M. R. (1973). The osmotic potential of polyethylene glycol 6000. Plant physiology, 51(5), 914-916.
 #' @examples calculate_PEG_6000(25, -4)
 calculate_PEG_6000 <- function(C, bar) {
-  PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * C - 0.0118)^2 + 4 * bar * (0.000000839 * C- 0.000118))) / (2 * (0.000000839 * C - 0.000118))
-  return(list("gram/literof water" = PEG, "gram/cc of water" = PEG / 1000))
+  PEG <- ((0.0118 - 0.000267 * C) - sqrt((0.000267 * C - 0.0118)^2 + 4 * bar * (0.000000839 * C - 0.000118))) / (2 * (0.000000839 * C - 0.000118))
+  return(list("gram/liter of water"= PEG, "gram/cc of water" = PEG / 1000))
 }
 
 #' Calculate Stress tolerance index (STI) suggested by Fernandez (1992)
