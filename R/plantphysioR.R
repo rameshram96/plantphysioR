@@ -104,7 +104,7 @@ st_index <- function(Yp, Ys) {
 #' @references Hossain, A. B. S., Sears, R. G., Cox, T. S., & Paulsen, G. M. (1990). Desiccation tolerance and its relationship to assimilate partitioning in winter wheat. Crop Science, 30(3), 622-627.
 mp_index <- function(Yp, Ys) {
   ((Ys + Yp) / 2)
-} # Hossain etal., 1990
+}
 
 
 #' Geometric mean productivity (GMP) by Fernandez (1992)
@@ -122,7 +122,7 @@ gmp <- function(Yp, Ys) {
 } # Fernandez,1992
 
 
-#' Tolerance index -TOL by Hossain etal., (1990)
+#' Tolerance index -TOL by Hossain et al., (1990)
 #' @description Higher the TOL value indicates the genotype is tolerant to stress
 #' @param Yp Yield under control condition
 #' @param Ys Yield under stress condition
@@ -341,7 +341,7 @@ all_indices <- function(Yp, Ys, Mp, Ms) {
 
   return(results)
 }
-## code to prepare `yield_data` dataset goes here
+## code to prepare `yield_data` data set goes here
 #' @title Example data
 #' @description Yield data of rice in kg/ha under two different growth conditions
 #' @format A data frame with 50 rows and 3 variables:
