@@ -1,6 +1,6 @@
 # plantphysioR (development version)
 
-## Version 0.0.0.9000 (2024-03-16)
+## Version 1.0.0 (2024-03-27)
 
 * Resolved issues raised during initial CRAN submission
 * Updated documentation for improved clarity.
