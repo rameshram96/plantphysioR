@@ -2,7 +2,7 @@
 % Please edit documentation in R/plantphysioR.R
 \name{tol_index}
 \alias{tol_index}
-\title{Tolerance index -TOL by Hossain etal., (1990)}
+\title{Tolerance index -TOL by Hossain et al., (1990)}
 \usage{
 tol_index(Yp, Ys)
 }
