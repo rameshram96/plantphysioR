@@ -31,3 +31,7 @@ ss_index(500, 350, 450, 370)
 [![R-CMD-check](https://github.com/rameshram96/plantphysioR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rameshram96/plantphysioR/actions/workflows/R-CMD-check.yaml)
 
 <!-- badges: end -->
+
+<!-- badges: start -->
+[![](https://cranlogs.r-pkg.org/badges/plantphysioR)](https://cran.r-project.org/package=plantphysioR)
+<!-- badges: end -->
