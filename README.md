@@ -1,4 +1,4 @@
-# plantphysioR <img src="man/figures/logo.png" align="right" height="120"/>
+# plantphysioR <img src="man/figures/logo.png" align="right" width="138"/>
 
 The goal of plantphysioR is to provide basic functions related to plant physiology, it contains functions related to various yield related indices, pigment content calculations and PEG6000 calculations
 
@@ -33,5 +33,7 @@ ss_index(500, 350, 450, 370)
 <!-- badges: end -->
 
 <!-- badges: start -->
+
 [![](https://cranlogs.r-pkg.org/badges/plantphysioR)](https://cran.r-project.org/package=plantphysioR)
+
 <!-- badges: end -->
