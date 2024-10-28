@@ -2,4 +2,7 @@ pandoc: '3.2'
 pkgdown: 2.1.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-10-16T11:16Z
+last_built: 2024-10-28T10:47Z
+urls:
+  reference: https://rameshram96.github.io/plantphysioR/reference
+  article: https://rameshram96.github.io/plantphysioR/articles
