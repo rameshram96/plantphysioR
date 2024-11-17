@@ -34,6 +34,6 @@ ss_index(500, 350, 450, 370)
 
 <!-- badges: start -->
 
-[![](https://cranlogs.r-pkg.org/badges/plantphysioR)]
-[![]https://cranlogs.r-pkg.org/badges/grand-total/plantphysioR]
+![](https://cranlogs.r-pkg.org/badges/plantphysioR)
+![](https://cranlogs.r-pkg.org/badges/grand-total/plantphysioR)
 <!-- badges: end -->
